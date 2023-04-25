@@ -7,12 +7,11 @@ const categories = require('./data/categories.json');
 
 app.use(cors());
 
-app.get('/', (req, res) =>{
+app.get('/', (req, res) => {
     res.send('Dragon is running')
 });
 
-app.get('/categories', (req, res) =>{
-    console.log(categories);
+app.get('/categories', (req, res) => {
     res.send(categories);
 })
 
